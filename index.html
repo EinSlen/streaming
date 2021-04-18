@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="Tous vos animés en exclusivité, Fruit Basket, One peace.... Faite de votre passion une réalité !">
+        <meta name="keywords" content="anime,manga,vostfr,saison,episode,ep,Haikyu,Demon Slayer,Fruit Basket,Dragon Ball Z,One Piece,No game no life,Charlotte,Kuroko no basket">
+        <link rel="stylesheet" href="prog/css/styles.css">
+        <link rel="icon" href="global/images/streaming.ico">
+        <title>FarMP - Anime Streaming</title>
+
+    </head>
+
+    <body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status=' ..COPYRIGHT.. '; return true;">
+
+        <header>
+
+            <img src="global/images/Far'MP.png" alt="Image source" id="logo1">
+
+            <nav>
+
+                <ul>
+                        <li><a href="#" id="o" class="a">Accueil</a></li>
+                        <li><a href="pages/global/serie.html" id="o2" class="a">Série</a></li>
+                        <li><a href="pages/global/film.html" id="o2" class="a">Film</a></li>
+                        <li><a href="pages/global/nouveau.html" id="o2" class="a">Nouveautés</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div id="recherche_active" onmouseover="searchActive()" onmouseout="searchDesactive()">
+
+                    <a class="recherche">🔍
+
+                        <input type="text" id="myInput" placeholder="Recherchez votre série" onkeyup="searchFun()">
+
+                    </a>
+
+                <table id="myTable">
+
+                    <tr>
+                        <td id="tr1">Haikyu</td>
+                    </tr>
+                    <tr>
+                        <td id="tr2">Demon Slayer</td>
+                    </tr>
+                    <tr>
+                        <td id="tr3">Fruit Basket</td>
+                    </tr>
+                    <tr>
+                        <td id="tr4">Dragon Ball Z</td>
+                    </tr>
+                    <tr>
+                        <td id="tr5">One Piece</td>
+                    </tr>
+                    <tr>
+                        <td id="tr6">No game no life</td>
+                    </tr>
+                    <tr>
+                        <td id="tr7">Charlotte</td>
+                    </tr>
+                    <tr>
+                        <td id="tr8">Kuroko no basket</td>
+                    </tr>
+
+                </table>
+                
+            </div>
+
+        </header>
+
+        <div id="header2">
+
+            <a id="bandetitle">
+
+                <video autoplay muted loop poster="global/poster/postertitle.jpg" id="bandetitlevideo">  
+                    <source src="global/video/bandeannoncetitle.mp4" type="video/mp4">
+                </video>
+
+                <audio id="bandetitleaudio" autoplay loop>
+                        <source src="global/audio/bandeannoncetitle.mp3" />
+                </audio>
+
+                <h1 id="bandetitle1"><strong>Nouveauté</strong></h1>
+                <h2 id="bandetitle2"><strong>Anime : <br /><br />Fruit Basket</strong></h2>
+                <h3 id="bandetitle3"><strong>▶ En savoir plus</strong></h3>
+
+                <img src="https://img.icons8.com/ios-filled/25/000000/mute.png" id="audiostart" onclick="playAudio()"/>
+                <img src="https://img.icons8.com/ios-filled/25/000000/room-sound.png" id="audiostop" onclick="stopAudio()"/>
+
+            </a>
+
+            <h1 id="Serietext">SÉRIE POPULAIRE</h1>
+
+            <section id="Serie">
+
+                <a id="a_serie">
+                    <img id="serie1" class="img_all_1" src="global/images/serie_img/serie1.png" alt="video stream 1" width="200px" height="250px"/>
+                    <p id="p_serie1" class="p_all_1">Haikyu</p>
+                </a>
+
+                    <a id="a_serie">
+                        <img id="serie2" class="img_all_1" src="global/images/serie_img/serie2.png" alt="video stream 2" width="200px" height="250px"/>
+                        <p id="p_serie2" class="p_all_1">Demon Slayer</p>
+                    </a>
+
+                        <a id="a_serie">
+                            <img id="serie3" class="img_all_1" src="global/images/serie_img/serie3.png" alt="video stream 3" width="200px" height="250px"/>
+                            <p id="p_serie3" class="p_all_1">Fruit Basket</p>
+                        </a>
+
+                            <a id="a_serie">
+                                <img id="serie4" class="img_all_1" src="global/images/serie_img/serie4.png" alt="video stream 4" width="200px" height="250px"/>
+                                <p id="p_serie4" class="p_all_1">Dragon Ball Z</p>
+                            </a>
+
+                                <a id="a_serie">
+                                    <img id="serie5" class="img_all_1" src="global/images/serie_img/serie5.png" alt="video stream 5" width="200px" height="250px"/>
+                                    <p id="p_serie5" class="p_all_1">One Piece</p>
+                                </a>
+
+                                    <a id="a_serie">
+                                        <img id="serie6" class="img_all_1" src="global/images/serie_img/serie6.png" alt="video stream 6" width="200px" height="250px"/>
+                                        <p id="p_serie6" class="p_all_1">No game no life</p>
+                                    </a>
+
+                                        <a id="a_serie">
+                                            <img id="serie7" class="img_all_1" src="global/images/serie_img/serie7.png" alt="video stream 7" width="200px" height="250px"/>
+                                            <p id="p_serie7" class="p_all_1">Charlotte</p>
+                                        </a>
+
+                                            <a id="a_serie">
+                                                <img id="serie8" class="img_all_1" src="global/images/serie_img/serie8.png" alt="video stream 8" width="200px" height="250px"/>
+                                                <p id="p_serie8" class="p_all_1">Kuroko no basket</p>
+                                            </a>
+
+                                                <div id="input_div">
+
+                                                    <a id="serie_suiv" class="input_sr" onclick="history.next();">Suivant</a>
+                                                    <a id="serie_retour" class="input_sr" onclick="history.return();">Retour</a>
+
+                                                </div>
+                                        
+            </section>
+
+            <h1 id="Serietext">SÉRIE</h1>
+
+            <section id="Serie2">
+
+                <a id="a_serie">
+                    <img id="sserie1" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                    <p id="p_serie1" class="p_all_1">AJOUTER</p></a>
+
+                    <a id="a_serie"
+                        ><img id="sserie2" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                        <p id="p_serie2" class="p_all_1">AJOUTER</p>
+                    </a>
+
+                        <a id="a_serie">
+                            <img id="sserie3" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                            <p id="p_serie3" class="p_all_1">AJOUTER</p>
+                        </a>
+
+                            <a id="a_serie">
+                                <img id="sserie4" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                <p id="p_serie4" class="p_all_1">AJOUTER</p>
+                            </a>
+
+                                <a id="a_serie">
+                                    <img id="sserie5" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                    <p id="p_serie5" class="p_all_1">AJOUTER</p>
+                                </a>
+
+                                    <a id="a_serie">
+                                        <img id="sserie6" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                        <p id="p_serie6" class="p_all_1">AJOUTER</p>
+                                    </a>
+
+                                        <a id="a_serie">
+                                            <img id="sserie7" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                            <p id="p_serie7" class="p_all_1">AJOUTER</p>
+                                        </a>
+
+                                            <a id="a_serie">
+                                                <img id="sserie8" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                                <p id="p_serie8" class="p_all_1">AJOUTER</p>
+                                            </a>
+
+                                            <div id="input_div">
+
+                                                <a id="serie_suiv" class="input_sr" onclick="history.next();">Suivant</a>
+                                                <a id="serie_retour" class="input_sr" onclick="history.return();">Retour</a>
+
+                                            </div>
+
+            </section>
+
+            <h1 id="Serietext">FILM</h1>
+
+            <section id="FILM">
+
+                <a id="a_serie">
+                    <img id="fserie1" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                    <p id="p_serie1" class="p_all_1">AJOUTER</p>
+                </a>
+
+                    <a id="a_serie">
+                        <img id="fserie2" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                        <p id="p_serie2" class="p_all_1">AJOUTER</p>
+                    </a>
+
+                        <a id="a_serie">
+                            <img id="fserie3" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                            <p id="p_serie3" class="p_all_1">AJOUTER</p>
+                        </a>
+
+                            <a id="a_serie">
+                                <img id="fserie4" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                <p id="p_serie4" class="p_all_1">AJOUTER</p>
+                            </a>
+
+                                <a id="a_serie">
+                                    <img id="fserie5" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                    <p id="p_serie5" class="p_all_1">AJOUTER</p>
+                                </a>
+
+                                    <a id="a_serie">
+                                        <img id="fserie6" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                        <p id="p_serie6" class="p_all_1">AJOUTER</p>
+                                    </a>
+
+                                        <a id="a_serie">
+                                            <img id="fserie7" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                            <p id="p_serie7" class="p_all_1">AJOUTER</p>
+                                        </a>
+
+                                            <a id="a_serie">
+                                                <img id="fserie8" class="img_all_1" src="global/images/serie_img/set_serie.png" alt="video stream 1" width="200px" height="250px"/>
+                                                <p id="p_serie8" class="p_all_1">AJOUTER</p>
+                                            </a>
+
+                                            <div id="input_div">
+
+                                                <a id="serie_suiv" class="input_sr" onclick="history.next();">Suivant</a>
+                                                <a id="serie_retour" class="input_sr" onclick="history.return();">Retour</a>
+
+                                            </div>
+
+            </section>
+
+        </div>
+
+        <footer>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <h1 class="footer-text">STREAMING - ANIME</h1>
+                    <p class="footer-p">
+                        Ce site va pouvoir vous faire regarder<br/> 
+                        vos animés Tranquillement à grand plaisir<br/>
+                        <br/>
+                        Respectez nos règles d'utilisation juste <a class="footer-tox" href="pages/global/tox.html">ici</a>
+                    </p>
+                    <h1 class="footer-text2">SOCIAUX</h1>
+                    <div class="footer-section-link">
+                        <img class="img-sociaux" src="https://img.icons8.com/color/48/000000/twitter.png" onclick=""/>
+                        <img class="img-sociaux"src="https://img.icons8.com/color/48/000000/instagram-new.png" onclick=""/>
+                        <img class="img-sociaux" src="https://img.icons8.com/color/48/000000/youtube-play.png" onclick=""/>
+                        <img class="img-sociaux"src="https://img.icons8.com/color/48/000000/discord-new-logo.png" onclick="window.open('https://discord.gg/gK2MeZy')"/>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h1 class="footer-text3">CONTACT</h1>
+
+                    <h2 class="footer-adr">Adresse de contact</h2>
+                    <address class="footer-adr2">rds-engine@gmail.com</address>
+                    <address class="footer-adr2">Tel: 0606060606</address>
+                    <address class="footer-adr2">Siège: Lens RPZ</address>
+
+                </div>
+
+                <div class="set-footer">
+                    <h2 class="DISIGN">DESIGNER:</h2>
+                </div>
+
+
+
+                <div class="footer-bottom">
+                    &copy; Far'MP | Designed by DVLaD
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script src="prog/js/app.js"></script>
+        <noscript> <meta http-equiv="refresh" content="0; url=pages/global/nojs.html"> </noscript>
+
+    </body>
+
+</html>
